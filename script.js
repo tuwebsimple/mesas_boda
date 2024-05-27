@@ -37,7 +37,7 @@ document.getElementById('searchButton').addEventListener('click', () => {
         Tu mesa es la número 
         <span class="bg-clip-text text-transparent text-blue-500 text-3xl md:text-4xl font-extrabold">${guest.table}</span></span>`;
     } else {
-        resultElement.innerHTML = '<span class="text-2xl md:text-2xl font-extrabold leading-tighter tracking-tighter text-red-500">Invitado no encontrado. <br> Selecciona el nombre correcto:</span>';
+        resultElement.innerHTML = '<span class="text-xl md:text-2xl font-extrabold leading-tighter tracking-tighter text-red-500">Invitado no encontrado. <br> Selecciona el nombre correcto:</span>';
         // Búsqueda difusa
         const results = fuse.search(searchInputValue);
         if (results.length > 0) {
